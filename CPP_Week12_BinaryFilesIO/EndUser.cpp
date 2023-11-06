@@ -86,12 +86,16 @@ int main()
     
     charfile.read(reinterpret_cast<char*>(inCharStorage), sizeof(letterData));
 
-    for (int count = 0; count < size; count++)
-        cout <<inStorage[count] << " ";
-    cout << endl;
-    for (int count = 0; count < size; count++)
-        cout << inCharStorage[count] << " ";
+    for (int count = 0; count < size; count++) {
+        cout << inStorage[count] << " ";
 
+    }
+        
+    cout << endl;
+
+    for (int count = 0; count < size; count++){
+        cout << inCharStorage[count] << " ";
+    }
     // Close the file	
     file.close();
     charfile.close();
